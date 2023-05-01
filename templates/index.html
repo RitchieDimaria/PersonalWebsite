@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/main.css') }}">
+    <script  src="{{ url_for('static',filename='js/main.js')}}"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>Hekkiworld</header>
+    <div>
+    <table id="inputTable">
+        {% for row in range(9) %}
+            <tr>
+                {% for col in range(9) %}
+                    <td><input type="text" id="cell{{row}}{{col}}" maxlength="1"></td>
+                {% endfor %}
+            </tr>
+        {% endfor %}
+    </table>
+    <button id="solve-btn">Solve!</button>
+    </div>
+    <div>A website by Richard Dimaria </div>
+    <div id="solved-divs">
+        
+    </div>
+</body>
+</html>

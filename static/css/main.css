@@ -1,0 +1,49 @@
+table {
+    border-collapse: collapse;
+}
+
+td {
+    width: 30px;
+    height: 30px;
+    text-align:center;
+}
+
+input[type=text] {
+    width:100%;
+    height:100%;
+    font-size:24px;
+    text-align:center;
+}
+
+.solved-div {
+    border: 2-x solid #999;
+    display: inline-block;
+    margin:10px;
+}
+.solved-div table {
+    border-collapse: collapse;
+    margin:0 auto;
+}
+
+.solved-div td{
+    border: 1px solid #ccc;
+    height: 40px;
+    width:40px;
+    text-align:center;
+    font-size:24px;
+    /*font-weight:bold;*/
+}
+
+.solved-div td:nth-child(3n+1) {
+    border-left:2px solid #999;
+}
+.solved-div td:nth-child(3n) {
+    border-right:2px solid #999;
+}
+
+.solved-div tr:nth-child(3n+1) td{
+    border-top:2px solid #999;
+}
+.solved-div tr:nth-child(3n) td{
+    border-bottom:2px solid #999;
+}
