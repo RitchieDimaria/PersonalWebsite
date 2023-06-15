@@ -6,23 +6,43 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/main.css') }}">
-    <link rel="stylesheet" href="css/pico.min.css">
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+    <link href="{{url_for('static',filename='css/main.css')}}" rel="stylesheet">
     <script  src="{{ url_for('static',filename='js/main.js')}}"></script>
     <title>Richard Dimaria</title>
 </head>
 
 <body>
-    <header>
+    <header class="bg-gray-900 text-white">
+        <div class="container mx-auto py-4 px-6 flex items-center justify-between">
+          <h1 class="text-xl font-bold">Your Website</h1>
+          <nav class="flex items-center">
+            <ul class="flex space-x-4">
+              <li><a href="#" class="text-white hover:text-gray-300">Home</a></li>
+              <li><a href="#" class="text-white hover:text-gray-300">About</a></li>
+              <li><a href="#" class="text-white hover:text-gray-300">Services</a></li>
+              <li><a href="#" class="text-white hover:text-gray-300">Contact</a></li>
+            </ul>
+            <ul class="flex space-x-4 ml-auto">
+              <li><a href="#"><i class="fab fa-twitter text-white hover:text-gray-300"></i></a></li>
+              <li><a href="#"><i class="fab fa-facebook text-white hover:text-gray-300"></i></a></li>
+              <li><a href="#"><i class="fab fa-instagram text-white hover:text-gray-300"></i></a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+    <header class="header" id="header">
         <div class="nav container">
             <nav>
-                <ul>
-                    <li><a href="home">Home</a></li>
-                    <li><a href="about">About Me</a></li>
-                    <li><a href="portfolio">Portfolio</a></li>
-                </ul>
+                <div class="nav_menu" id="nav-menu">
+                    <ul class="nav-list grid">
+                        <li><a href="home">Home</a></li>
+                        <li><a href="about">About Me</a></li>
+                        <li><a href="portfolio">Portfolio</a></li>
+                    </ul>
+                </div>
             </nav>
         </div>
+        
     </header>
     <nav>
         <ul>
