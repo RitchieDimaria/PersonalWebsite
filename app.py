@@ -18,6 +18,10 @@ grid =[[0,4,0, 7,0,1, 0,0,0],
 def index():
     return render_template('index.html')
 
+@app.route('/aboutme')
+def about_me():
+    return render_template('aboutme.html')
+
 @app.route('/solve',methods=['POST'])
 def solveTable():
     data = request.get_json()

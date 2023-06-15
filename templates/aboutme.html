@@ -1,0 +1,39 @@
+<html>
+<head>
+    <!-- Common head content goes here -->
+    <title>About me | Richard Dimaria</title>
+    <link rel="icon" href="/static/images/twenty-sided-dice.ico" type="image/x-icon">
+    <script  src="{{ url_for('static',filename='js/main.js')}}"></script>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/main.css') }}">
+    <!-- Any CSS or JavaScript imports -->
+</head>
+
+<!-- Nothing space at the top -->
+<header class="bg-gray-900 text-white">
+    <div class="container mx-auto py-10 ">
+    </div>
+</header>
+
+<!-- Section contains: Name and clickable links for navigation -->
+<section class="bg-gray-900 text-white">
+    <div class="container mx-auto px-12 flex">
+        <img class="max-h-7 max-w-7 pr-2" src="/static/images/twenty-sided-dice.ico" alt="Icon">
+        <h1 class="font-sans text-xl font-semibold">Richard Dimaria</h1>
+    </div>
+    <div class="container mx-auto px-12 py-6 ">
+      <nav class="flex items-center">
+        <ul class="flex space-x-4 underline-offset-8">
+          <li><a href="aboutme" class=" text-white underline decoration-red-500">About Me</a></li>
+          <li><a href="#" class="text-gray-400 hover:text-white hover:underline decoration-blue-500">Blog</a></li>
+          <li><a href="#" class="text-gray-400 hover:text-white hover:underline decoration-green-500">Portfolio</a></li>
+          <li><a href="#" class="text-gray-400 hover:text-white hover:underline decoration-pink-500">Contact</a></li>
+          <li class="text-gray-400 hover:text-white hover:underline decoration-orange-500"><a href="#">GitHub <i class="fa fa-arrow-up-right-from-square"></i></a></li>
+        </ul>
+        <ul class="flex space-x-4 ml-auto">
+          <li><a href="#"><i class="fab fa-twitter text-white hover:text-gray-300"></i></a></li>
+          <li><a href="#"><i class="fab fa-facebook text-white hover:text-gray-300"></i></a></li>
+          <li><a href="#"><i class="fab fa-instagram text-white hover:text-gray-300"></i></a></li>
+        </ul>
+      </nav>
+    </div>
+</section>
