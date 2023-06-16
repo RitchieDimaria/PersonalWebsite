@@ -4,30 +4,32 @@
     <title>About me | Richard Dimaria</title>
     <link rel="icon" href="/static/images/twenty-sided-dice.ico" type="image/x-icon">
     <script  src="{{ url_for('static',filename='js/main.js')}}"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
     <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/main.css') }}">
     <!-- Any CSS or JavaScript imports -->
 </head>
 
 <!-- Nothing space at the top -->
-<header class="bg-gray-900 text-white">
-    <div class="container mx-auto py-10 ">
+<header class="bg-neutral-900 text-white">
+    <div class="container mx-auto py-8 ">
     </div>
 </header>
 
+<body class="bg-neutral-900">
 <!-- Section contains: Name and clickable links for navigation -->
-<section class="bg-gray-900 text-white">
-    <div class="container mx-auto px-12 flex">
+<section class="bg-neutral-900 text-white md:mx-auto md:px-20">
+    <div class="container mx-auto  flex">
         <img class="max-h-7 max-w-7 pr-2" src="/static/images/twenty-sided-dice.ico" alt="Icon">
         <h1 class="font-sans text-xl font-semibold">Richard Dimaria</h1>
     </div>
-    <div class="container mx-auto px-12 py-6 ">
+    <div class="container mx-auto py-6 ">
       <nav class="flex items-center">
-        <ul class="flex space-x-4 underline-offset-8">
-          <li><a href="aboutme" class=" text-white underline decoration-red-500">About Me</a></li>
-          <li><a href="#" class="text-gray-400 hover:text-white hover:underline decoration-blue-500">Blog</a></li>
-          <li><a href="#" class="text-gray-400 hover:text-white hover:underline decoration-green-500">Portfolio</a></li>
-          <li><a href="#" class="text-gray-400 hover:text-white hover:underline decoration-pink-500">Contact</a></li>
-          <li class="text-gray-400 hover:text-white hover:underline decoration-orange-500"><a href="#">GitHub <i class="fa fa-arrow-up-right-from-square"></i></a></li>
+        <ul class="flex space-x-8 underline-offset-8">
+          <li><a href="aboutme" class=" text-white text-lg underline decoration-red-500">About</a></li>
+          <li><a href="#" class="text-gray-400 text-lg hover:text-white hover:underline decoration-blue-500">Blog</a></li>
+          <li><a href="#" class="text-gray-400 text-lg hover:text-white hover:underline decoration-green-500">Portfolio</a></li>
+          <li><a href="#" class="text-gray-400 text-lg hover:text-white hover:underline decoration-pink-500">Contact</a></li>
+          <li class="text-gray-400 text-lg hover:text-white hover:underline decoration-orange-500"><a href="https://github.com/RitchieDimaria" target="_blank">GitHub <i class="fa fa-arrow-up-right-from-square"></i></a></li>
         </ul>
         <ul class="flex space-x-4 ml-auto">
           <li><a href="#"><i class="fab fa-twitter text-white hover:text-gray-300"></i></a></li>
@@ -37,3 +39,32 @@
       </nav>
     </div>
 </section>
+<!-- About me section-->
+<section class="bg-neutral-900 py-10 px-20 text-white">
+    <div class="container mx-auto px-4 flex flex-col md:flex-row">
+        <div class="md:w-2/3 mt-4 md:mt-0">
+            <p class="text-5xl font-bold py-6">About Me</p>
+            <p class="mt-4 text-lg text-gray-300 py-6"> Hey, I'm Richard. I'm a passionate software developer dedicated to crafting innovative solutions and pushing the boundaries of technology. I am currently finishing my degree at the University of Guelph, where I am majoring in Computer Science and minoring in Mathematics. </p>
+            <p class="mt-4 text-lg text-gray-300"> In addition to my passion for software development, I find balance and inspiration through various personal pursuits. When I'm not coding, you can often find me immersed in a Roguelike game. Gaming not only serves as a source of entertainment but also enhances my problem-solving skills and fuels my creativity.</p>
+            <p class="mt-4 text-lg text-gray-300 py-6"> Outside the digital realm, I am an ardent believer in maintaining a healthy body and mind. I prioritize regular workouts and physical activities to stay active and energized. Engaging in fitness routines not only keeps me physically fit but also boosts my productivity and focus, enabling me to tackle complex coding tasks with vigor. Moreover, I thrive on exploring new horizons as continuous learning is a fundamental aspect of my journey as a software developer, as it allows me to stay up-to-date with the ever-evolving industry trends and adapt to emerging technologies. </p>
+        </div>
+        <div class="md:w-1/3 md:p-10">
+            <div class="bg-neutral-800 mt-10 p-4 rounded-lg border border-neutral-700">
+                <h2 class="text-xl font-bold">Me</h2>
+                <p>Image of myself goes here</p>
+              </div>
+              <div class="bg-neutral-800 mt-10 p-4 rounded-lg border border-neutral-700">
+                <h2 class="text-xl font-bold">Me</h2>
+                <p>Image of myself goes here</p>
+              </div>
+              <div class="bg-neutral-800 mt-10 p-4 rounded-lg border border-neutral-700">
+                <h2 class="text-xl font-bold">Me</h2>
+                <p>Image of myself goes here</p>
+              </div>
+        </div>
+        </div>
+    </div>
+    
+    </section>
+
+</body>
