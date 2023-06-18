@@ -22,6 +22,11 @@ def index():
 def about_me():
     return render_template('aboutme.html')
 
+@app.route('/thiswebsite')
+def this_website():
+    return render_template('thiswebsite.html')
+
+
 @app.route('/solve',methods=['POST'])
 def solveTable():
     data = request.get_json()
